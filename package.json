@@ -1,0 +1,17 @@
+{
+  "name": "odude-resolve-api",
+  "version": "1.0.0",
+  "description": "A Node.js application for interacting with blockchain functionalities using ODude Name",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "build": "echo 'No build step required'"
+  },
+  "dependencies": {
+    "@glif/filecoin-address": "^2.0.43",
+    "@odude/oduderesolve": "^1.0.0",
+    "dotenv": "^16.0.3",
+    "ethers": "^5.0.0",
+    "express": "^4.17.2"
+  }
+}
