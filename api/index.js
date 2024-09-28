@@ -12,9 +12,10 @@ const settings = {
   wallet_pvt_key: process.env.PVT_KEY
 };
 
+// Redirect from root to /api
 app.get('/', (req, res) => {
-    res.send("This is live API script...");
-});
+    res.redirect('/api');
+  });
 
 const resolve = new ODudeName(settings);
 
