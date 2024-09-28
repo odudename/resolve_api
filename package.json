@@ -2,9 +2,7 @@
   "name": "odude-resolve-api",
   "version": "1.0.0",
   "description": "A Node.js application for interacting with blockchain functionalities using ODude Name",
-  "main": "app.js",
   "scripts": {
-    "start": "node app.js",
     "build": "echo 'No build step required'"
   },
   "dependencies": {
