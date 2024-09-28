@@ -1,6 +1,8 @@
 const fa = require("@glif/filecoin-address");
 const _ethers = require("ethers");
 const ODudeName = require("@odude/oduderesolve");
+const express = require('express');
+const app = express();
 require('dotenv').config();
 
 const settings = {
@@ -9,6 +11,10 @@ const settings = {
   fvm_rpc_url: process.env.FVM_RPC,
   wallet_pvt_key: process.env.PVT_KEY
 };
+
+app.get('/', (req, res) => {
+    res.send("This is live API script...");
+});
 
 const resolve = new ODudeName(settings);
 
