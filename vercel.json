@@ -1,20 +1,21 @@
 {
-  "rewrites": [
+  "routes": [
     {
-      "source": "/",
-      "destination": "/api"
+      "src": "/",
+      "status": 301,
+      "headers": {
+        "Location": "/api"
+      }
+    },
+    {
+      "src": "/api/(.*)",
+      "dest": "/api/index.js"
     }
   ],
   "builds": [
     {
       "src": "api/index.js",
       "use": "@vercel/node"
-    }
-  ],
-  "routes": [
-    {
-      "src": "/api/(.*)",
-      "dest": "/api/index.js"
     }
   ]
 }
